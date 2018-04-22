@@ -62,7 +62,7 @@ function activateTranslate(tab) {
 
                 // if blank, say user messed up
                 if (response === '' || response === undefined) {
-                    el('original').innerText = 'Please select';
+                    el('original').innerText = 'Select';
                     el('translation').innerText = 'a word';
                     return;
                 }
