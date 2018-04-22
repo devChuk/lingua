@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='lol.css') }}?q=313" type="text/css">
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="{{ url_for('static', filename='big_logo.svg') }}">
+        </header>
+        <div id="word">Loading</div>
+        <div id="controls">
+            <img id="flip" src="{{ url_for('static', filename='help-circle.svg') }}">
+            <img id="link" src="{{ url_for('static', filename='link.svg') }}">
+            <img id="skip" src="{{ url_for('static', filename='skip-forward.svg') }}">
+            <img id="delete" src="{{ url_for('static', filename='trash.svg') }}">
+        </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='flash.js') }}"></script>
+    </body>
+</html>

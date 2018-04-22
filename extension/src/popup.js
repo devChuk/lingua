@@ -101,9 +101,25 @@ function activateTranslate(tab) {
                             // chrome.storage.sync.set({history: []});
                         });
 
+                        let payload = {
+                            original: response,
+                            translation: translation,
+                            url: tab[0].url
+                        };
+                        fetch('https://lingua-9c27a.firebaseio.com/.json', {
+                                body: JSON.stringify(payload),
+                                headers: new Headers({
+                                    'Content-Type': 'application/json'
+                                }),
+                                method: 'POST'
+                            })
+                            .then(response => response.json()) //parses response to JSON
+                            .then(data => {console.log(data);})
+                            .catch(error => {console.error(error, payload)});
+
                         populateFlashCard(
                             response,
-                            data.data.translations[0].translatedText
+                            translation
                         );
                     	})
                     .catch(data => {console.log(data);});

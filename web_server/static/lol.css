@@ -1,0 +1,51 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, ul, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+header {
+    padding: 40px;
+    height: 40px;
+}
+
+header>img {
+    width: 30px;
+}
+
+#word {
+    font-size: 70px;
+    text-align: center;
+    padding: 90px 0px;
+}
+
+#controls {
+    display: flex;
+    text-align: center;
+}
+
+#controls>img {
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
+}
