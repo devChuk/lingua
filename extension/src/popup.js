@@ -15,7 +15,6 @@ function populateFlashCard(original, translation) {
 }
 
 function populateHistoryList(history) {
-    console.log(history);
     for (let i = 0; i < history.length; i++) {
         el('history').innerHTML += li(history[i].original, history[i].translation);
     }
