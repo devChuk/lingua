@@ -3,7 +3,7 @@
 //
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, p, ul, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -54,7 +54,7 @@ table {
 
 header {
     height: 25px;
-    align-items: center:
+    align-items: center;
     vertical-align: middle;
     top: 0;
     left: 0;
@@ -77,6 +77,11 @@ header>img {
 
 #list {
     margin-right: 20px;
+    cursor: pointer;
+}
+
+#settings {
+    cursor: pointer;
 }
 
 #original {
@@ -92,6 +97,39 @@ header>img {
     padding: 40px 0px;
 }
 
-/* #list {
-    margin-right: 20px;
-} */
+#history {
+    padding: 0px 20px 20px 20px;
+}
+
+#history>li {
+    border-bottom: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #EFF0F1;
+    /* height: 2em; */
+    height: 2em;
+    padding-top: 2em;
+    text-align: center;
+}
+
+#history>li:last-child {
+    border: none;
+}
+
+#history>li>span:first-child {
+    float: left;
+}
+
+#history>li>span:last-child {
+    float: right;
+}
+
+#big_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30vw;
+    height: 30vw;
+    margin-top: -15vw; /* Half the height */
+    margin-left: -15vw; /* Half the width */
+}
